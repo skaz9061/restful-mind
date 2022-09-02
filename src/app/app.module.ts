@@ -12,6 +12,8 @@ import { SpecialtyComponent } from './specialty/specialty.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { RatesComponent } from './rates/rates.component';
 import { BookingComponent } from './booking/booking.component';
+import { HomeComponent } from './home/home.component';
+import { CostCoverageComponent } from './cost-coverage/cost-coverage.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { BookingComponent } from './booking/booking.component';
     SpecialtyComponent,
     InsuranceComponent,
     RatesComponent,
-    BookingComponent
+    BookingComponent,
+    HomeComponent,
+    CostCoverageComponent
   ],
   imports: [
     BrowserModule,
