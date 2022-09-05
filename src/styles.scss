@@ -3,14 +3,17 @@
 
 // Custom Variables
 // * Colors
-$midnight-gray: #111;
-$logo_color_light: #edd1be;
-$logo_color_dark: rgb(64, 58, 55);
-$logo_color_dark_alpha_50: rgb(64, 58, 55, 0.5);
-$logo_color_dark_alpha_25: rgb(64, 58, 55, 0.25);
-$logo_color_dark_secondary: rgb(90, 85, 83);
-$logo_color_alpha_50: rgba(237, 209, 190, 0.5);
-$logo_color_alpha_25: rgba(237, 209, 190, 0.25);
+$dark: rgb(0, 17, 96);
+$dark_alpha_25: rgba(0, 9, 44, 0.25);
+$dark_alpha_50: rgba(0, 9, 44, 0.5);
+$dark_alpha_75: rgba(0, 9, 44, 0.75);
+$logo_color_light: rgb(188, 229, 73);
+$logo_color_dark: rgb(29, 179, 66);
+$logo_color_dark_alpha_50: rgb(29, 179, 66, 0.5);
+$logo_color_dark_alpha_25: rgb(29, 179, 66, 0.25);
+$logo_color_dark_secondary: rgb(55, 217, 78);
+$logo_color_alpha_50: rgba(188, 229, 73, 0.5);
+$logo_color_alpha_25: rgba(188, 229, 73, 0.25);
 
 
 // * Font Sizes:
@@ -23,10 +26,6 @@ $fs6: 12px;
 
 // * Font Families
 $barlow-condensed: 'Barlow Condensed', sans-serif;
-
-// Bootstrap Overrides
-// * Colors
-$dark: $midnight-gray;
 
 // * Font Sizes:
 $font-sizes: (
@@ -85,6 +84,14 @@ $font-sizes: (
   }
 }
 
+.bg-dark-alpha-25{
+  background-color: $dark_alpha_25;
+}
+
+.bg-dark-alpha-50{
+  background-color: $dark_alpha_50;
+}
+
 .bg-logo-color-alpha-50{
   background-color: $logo_color_alpha_50;
 }
@@ -133,8 +140,12 @@ $font-sizes: (
   }
 }
 
+.border-dark-alpha-75 {
+  --bs-border-color: rgba(0, 9, 44, 0.75) !important;
+}
+
 .border-logo-color-light {
-  --bs-border-color: rgb(237, 209, 190) !important;
+  --bs-border-color: rgb(188, 229, 73) !important;
 }
 
 .border-logo-color-dark {
