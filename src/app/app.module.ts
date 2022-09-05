@@ -14,6 +14,8 @@ import { RatesComponent } from './rates/rates.component';
 import { BookingComponent } from './booking/booking.component';
 import { HomeComponent } from './home/home.component';
 import { CostCoverageComponent } from './cost-coverage/cost-coverage.component';
+import { ContactComponent } from './contact/contact.component';
+import {HoursTransformPipe} from "./hours-transform.pipe";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CostCoverageComponent } from './cost-coverage/cost-coverage.component';
     RatesComponent,
     BookingComponent,
     HomeComponent,
-    CostCoverageComponent
+    CostCoverageComponent,
+    ContactComponent,
+    HoursTransformPipe
   ],
   imports: [
     BrowserModule,

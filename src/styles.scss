@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Custom Variables
+// * Colors
+$midnight-gray: #111;
+$logo_color_light: #edd1be;
+$logo_color_dark: rgb(64, 58, 55);
+$logo_color_dark_alpha_50: rgb(64, 58, 55, 0.5);
+$logo_color_dark_alpha_25: rgb(64, 58, 55, 0.25);
+$logo_color_dark_secondary: rgb(90, 85, 83);
+$logo_color_alpha_50: rgba(237, 209, 190, 0.5);
+$logo_color_alpha_25: rgba(237, 209, 190, 0.25);
+
+
+// * Font Sizes:
+$fs1: 64px;
+$fs2: 48px;
+$fs3: 24px;
+$fs4: 18px;
+$fs5: 16px;
+$fs6: 12px;
+
+// * Font Families
+$barlow-condensed: 'Barlow Condensed', sans-serif;
+
+// Bootstrap Overrides
+// * Colors
+$dark: $midnight-gray;
+
+// * Font Sizes:
+$font-sizes: (
+  1: $fs1,
+  2: $fs2,
+  3: $fs3,
+  4: $fs4,
+  5: $fs5,
+  6: $fs6
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Custom Classes
+.ff-barlow {
+  font-family: $barlow-condensed;
+}
+
+.fw_lightest {
+  font-weight: 100;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-logo-color-light {
+  color: $logo_color_light;
+  &:hover{
+    color: $logo_color_light;
+  }
+  &:link{
+    color: $logo_color_light;
+  }
+  &:visited{
+    color: $logo_color_light;
+  }
+  &:active{
+    color: $logo_color_light;
+  }
+}
+
+.text-logo-color-dark {
+  color: $logo_color_dark;
+  &:hover{
+    color: $logo_color_dark;
+  }
+  &:link{
+    color: $logo_color_dark;
+  }
+  &:visited{
+    color: $logo_color_dark;
+  }
+  &:active{
+    color: $logo_color_dark;
+  }
+}
+
+.bg-logo-color-alpha-50{
+  background-color: $logo_color_alpha_50;
+}
+
+.bg-logo-color-alpha-25{
+   background-color: $logo_color_alpha_25;
+}
+
+.bg-logo-color-light{
+  background-color: $logo_color_light;
+}
+
+.bg-logo-color-dark-alpha-50{
+  background-color: $logo_color_dark_alpha_50;
+}
+
+.bg-logo-color-dark-alpha-25{
+  background-color: $logo_color_dark_alpha_25;
+}
+
+.bg-logo-color-dark{
+  background-color: $logo_color_dark;
+}
+
+.bg-logo-color-dark-secondary{
+  background-color: $logo_color_dark_secondary;
+}
+
+.btn-logo-color-light {
+  color: $dark;
+  background-color: $logo_color_light;
+
+  &:hover{
+    color: $logo_color_light;
+    background-color: $logo_color_dark;
+  }
+}
+
+.btn-logo-color-dark {
+  color: $logo_color_light;
+  background-color: $logo_color_dark;
+
+  &:hover{
+    color: $dark;
+    background-color: $logo_color_light;
+  }
+}
+
+.border-logo-color-light {
+  --bs-border-color: rgb(237, 209, 190) !important;
+}
+
+.border-logo-color-dark {
+  --bs-border-color: rgb(64, 58, 55) !important;
+}
+
+.border-logo-color-alpha-50{
+  --bs-border-color:  rgba(237, 209, 190, 0.5) !important;
+}
+
+.shadow-color-light {
+  box-shadow: 20px 20px $logo_color_light;
+}
