@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {InfoService} from "../info.service";
+import {ExternalLinkService} from "../external-link.service";
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private info: InfoService,
+    public eLinks: ExternalLinkService
+  ) { }
+
+  phoneNumber:string = this.info.getPhoneNumber();
 
   ngOnInit(): void {
   }

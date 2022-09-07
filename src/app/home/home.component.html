@@ -2,18 +2,18 @@
   <div class="row gx-0">
     <div class="col-sm-12 position-relative shadow-lg">
       <!--<video loop width=100% autoplay playsinline style="pointer-events: none;" src="assets/home_vid.mp4"></video>-->
-      <div class="d-flex position-absolute flex-column-reverse justify-content-center bottom-0">
-        <div class="d-block bg-dark-alpha-50 text-white border-dark-alpha-75 border border-3 p-3 text-center bottom-0 mx-auto" style="width: 50%;">
-          <h1>Welcome</h1>
+      <div class="d-flex col-12 position-absolute flex-column-reverse justify-content-center bottom-0">
+        <div class="d-block bg-dark-alpha-50 text-light p-3 text-center bottom-0 mx-auto" style="width: 50%; max-width: 600px;">
+          <h1 class="ff-barlow">Welcome</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue arcu, egestas et quam in, dictum placerat massa. Maecenas eu est posuere, vulputate sapien vel, ullamcorper nunc. Integer eget nisl ipsum. Nunc ac consectetur felis. Nulla metus est, dignissim ac felis eget, sollicitudin egestas orci. Mauris et velit at turpis rhoncus facilisis eget quis est. Curabitur eget ante dolor.<br /> <br />
           </p>
-          <button class="btn btn-dark text-logo-color-light fst-italic fw-500" routerLink="/about">
+          <button class="btn btn-dark text-light fst-italic fw-500" routerLink="/about">
             Learn more
           </button>
         </div>
       </div>
-      <img width=100% src="assets/home_img.jpg" />
+      <img width=100% src="assets/home_img.jpg" alt="Woman sitting at dock, looking across lake at mountains."/>
     </div>
   </div>
   <div class="row gx-5 align-items-center mt-5">
@@ -21,24 +21,25 @@
       <h1 class="fst-italic mb-5 text-dark ff-barlow fs-2 text-center text-md-start">
         Get the help you need
       </h1>
-      <p class="border-top border-2 border-logo-color-light pt-3 pe-5 text-dark">
+      <p class="border-top border-2 border-logo-color-light pt-3 pe-5 text-dark" style="max-width: 800px;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue arcu, egestas et quam in, dictum placerat massa. Maecenas eu est posuere, vulputate sapien vel, ullamcorper nunc. Integer eget nisl ipsum. Nunc ac consectetur felis. Nulla metus est, dignissim ac felis eget, sollicitudin egestas orci. Mauris et velit at turpis rhoncus facilisis eget quis est. Curabitur eget ante dolor.<br /> <br />
       </p>
       <div class="text-center">
-        <button class="btn btn-dark fst-italic text-logo-color-light" routerLink="/specialty">
+        <button class="btn btn-dark fst-italic fw-500 text-light" routerLink="/specialty">
           Our Services
         </button>
       </div>
     </div>
     <div class="d-none d-md-inline col-md-6 mb-5">
-      <img width="80%" src="assets/sad_leaves.jpg" class="shadow-color-light" />
+      <img width="80%" src="assets/fashionable.jpg" class="shadow-color-dark" alt="Fashionable woman looking left with eyes closed."/>
     </div>
   </div>
   <div class="row gx-0">
-    <div class="col-12 bg-dark mt-5 py-5 shadow-lg">
-      <h2 class="text-logo-color-light fs-2 ff-barlow fw-light text-center fst-italic">
-        Looking forward to hearing from you!
+    <div class="col-12 bg-dark mt-5 py-5 bg-gradient shadow-lg text-center">
+      <h2 class="text-light fs-2 ff-barlow fw-light fst-italic">
+        Looking forward to hearing from you
       </h2>
+      <a class="btn btn-lg btn-logo-color-light text-dark mx-auto px-5" [href]="eLinks.getBooking()">Book Appointment</a>
     </div>
   </div>
   <div class="row gx-0">

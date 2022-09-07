@@ -1,7 +1,7 @@
 <div class="container-fluid mb-5">
   <div class="row justify-content-center mt-5 py-5">
     <div class="col-5">
-      <h1 class="text-center mb-5 fst-italic ff-barlow fs-2">About Us</h1>
+      <h1 class="text-center text-dark mb-5 fst-italic ff-barlow fs-2">About Us</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Pharetra et ultrices neque ornare aenean euismod elementum.
       </p>
@@ -13,23 +13,25 @@
       </p>
     </div>
   </div>
-  <div class="row bg-logo-color-dark text-center shadow py-5">
-    <span class="ff-barlow fs-1 fst-italic text-logo-color-light">Meet Our Provider</span>
+  <div class="row bg-dark text-center shadow py-5">
+    <span class="ff-barlow fs-1 fst-italic text-white">Meet Our Provider</span>
   </div>
-  <div class="row mt-5 pt-5 align-items-center justify-content-around">
+  <div class="row mt-5 py-5 align-items-center justify-content-around">
     <div class="col-md-4">
-      <h2 class="ff-barlow fst-italic text-logo-color-dark fs-2">
+      <h2 class="ff-barlow fst-italic text-dark fs-2 mb-4">
         {{providerName}}
       </h2>
-      <p *ngFor="let para of providerDesc">
-        {{para}}
-      </p>
+      <div class="border-top border-2 border-logo-color-light pt-3 pe-5 text-dark">
+        <p *ngFor="let para of providerDesc">
+          {{para}}
+        </p>
+      </div>
     </div>
     <div class="col-md-4 mb-5">
-      <img src="{{providerImage}}" class="shadow-color-light" width="85%" />
+      <img src="{{providerImage}}" class="shadow-color-dark" width="85%" alt="Headshot of provider {{providerName}}"/>
     </div>
   </div>
-  <div class="row justify-content-around bg-logo-color-dark shadow-lg mb-5 bg-gradient">
+  <div class="row justify-content-around bg-dark shadow-lg mb-5 bg-gradient">
     <div class="col-md-8 col-lg-6 text-center">
       <h3 class="text-logo-color-light ff-barlow fs-2 fw-light">Office Hours</h3>
       <div class="d-flex flex-row flex-wrap justify-content-evenly text-white">
@@ -39,17 +41,17 @@
       </div>
     </div>
     <div class="col-2 my-auto">
-      <button class="btn btn-lg btn-logo-color-light" >Book Appointment</button>
+      <a class="btn btn-lg btn-light text-dark" [href]="this.eLinks.getBooking()">Book Appointment</a>
     </div>
   </div>
   <div class="row justify-content-around">
     <div class="col-md-4">
-      <h3 class="fs-2 ff-barlow fw-light text-center">Location:</h3>
+      <h3 class="fs-2 ff-barlow fw-light text-dark text-center">Location:</h3>
     </div>
     <div class="col-md-6 d-flex flex-column">
-      <div *ngFor="let location of locations" class="bg-logo-color-dark-secondary border border-5 border-logo-color-dark rounded p-3 m-3">
-        <p class="text-white fs-3"><i class="bi bi-geo-alt-fill"></i> {{location.name}}</p>
-        <ul class="list-unstyled ms-5 text-white">
+      <div *ngFor="let location of locations" class="bg-light border border-1 border-dark rounded p-3 m-3">
+        <p class="text-dark fs-3"><i class="bi bi-geo-alt-fill"></i> {{location.name}}</p>
+        <ul class="list-unstyled ms-5 text-dark">
           <li>
             Address: {{location.address}}
           </li>

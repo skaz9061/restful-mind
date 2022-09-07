@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsuranceComponent implements OnInit {
 
+  insuranceLogos: string[] = [
+    "aetna.png",
+    "bcbs.png",
+    "cigna.png",
+    "oscar.webp",
+    "oxford.png",
+    "uhc.png"
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

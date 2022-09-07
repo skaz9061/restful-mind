@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ExternalLinkService} from "../external-link.service";
 
 @Component({
   selector: 'app-specialty',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpecialtyComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public eLinks: ExternalLinkService
+  ) { }
 
   ngOnInit(): void {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
 }

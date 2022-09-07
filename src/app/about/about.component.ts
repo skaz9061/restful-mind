@@ -3,7 +3,7 @@ import {InfoService} from "../info.service";
 import {Utils} from "../utils";
 import {KeyValue} from "@angular/common";
 import {Location} from "../location";
-import {HoursTransformPipe} from "../hours-transform.pipe";
+import {ExternalLinkService} from "../external-link.service";
 
 @Component({
   selector: 'app-about',
@@ -12,7 +12,10 @@ import {HoursTransformPipe} from "../hours-transform.pipe";
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private info: InfoService) { }
+  constructor(
+    private info: InfoService,
+    public eLinks: ExternalLinkService
+    ) { }
 
   ngOnInit(): void {
   }

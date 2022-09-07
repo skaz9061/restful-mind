@@ -1,1 +1,15 @@
-<p>insurance works!</p>
+<div class="container-fluid">
+  <div class="row bg-dark text-light justify-content-center shadow-lg p-4 mb-5">
+    <div class="col-12 col-lg-4 col-xl-3 d-flex flex-column justify-content-center align-items-center">
+      <img src="assets/logo-a-sm.png" alt="Logo" width="100%" style="max-width: 500px;"/>
+    </div>
+    <div class="col-12 col-lg-6">
+      <h1 class="ff-barlow fw-light fs-2 text-center p-5">Insurance Providers:</h1>
+    </div>
+  </div>
+  <div class="row flex-wrap p-5 align-items-center justify-content-center">
+    <div *ngFor="let logo of insuranceLogos" class="my-3 mx-2" style="width: 200px;">
+      <img src="assets/insurance-logos/{{logo}}" width="100%"/>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 // Custom Variables
 // * Colors
 $dark: rgb(0, 17, 96);
+$light: rgb(243, 243, 248);
+$shadow-color: rgba(black, 0.50);
 $dark_alpha_25: rgba(0, 9, 44, 0.25);
 $dark_alpha_50: rgba(0, 9, 44, 0.5);
 $dark_alpha_75: rgba(0, 9, 44, 0.75);
+$light: rgba(243, 243, 248);
+$light: rgba(243, 243, 248);
+$light: rgba(243, 243, 248);
 $logo_color_light: rgb(188, 229, 73);
-$logo_color_dark: rgb(29, 179, 66);
+$logo_color_dark: rgb(171, 206, 69);
 $logo_color_dark_alpha_50: rgb(29, 179, 66, 0.5);
 $logo_color_dark_alpha_25: rgb(29, 179, 66, 0.25);
 $logo_color_dark_secondary: rgb(55, 217, 78);
@@ -20,12 +26,14 @@ $logo_color_alpha_25: rgba(188, 229, 73, 0.25);
 $fs1: 64px;
 $fs2: 48px;
 $fs3: 24px;
+$fs3-5: 20px;
 $fs4: 18px;
 $fs5: 16px;
 $fs6: 12px;
 
 // * Font Families
 $barlow-condensed: 'Barlow Condensed', sans-serif;
+$cormorant-garamond: 'Cormorant Garamond', serif;
 
 // * Font Sizes:
 $font-sizes: (
@@ -37,11 +45,18 @@ $font-sizes: (
   6: $fs6
 );
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+.fs-3-5 {
+  font-size: $fs3-5;
+}
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 // Custom Classes
 .ff-barlow {
   font-family: $barlow-condensed;
+}
+
+.ff-cormorant {
+  font-family: $cormorant-garamond;
 }
 
 .fw_lightest {
@@ -125,7 +140,7 @@ $font-sizes: (
   background-color: $logo_color_light;
 
   &:hover{
-    color: $logo_color_light;
+    color: $dark;
     background-color: $logo_color_dark;
   }
 }
@@ -157,5 +172,50 @@ $font-sizes: (
 }
 
 .shadow-color-light {
-  box-shadow: 20px 20px $logo_color_light;
+  box-shadow: 15px 15px $logo_color_light;
+}
+
+.shadow-color-dark {
+  box-shadow: 15px 15px $light;
+}
+
+.background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.rate-card {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient($dark, $dark_alpha_75);
+  margin: 30px;
+  box-shadow:  $shadow-color 0 1rem 3rem;
+}
+
+.rate-card h2 {
+  font-family: $barlow-condensed;
+  font-weight: 300;
+  font-size: $fs2;
+}
+
+.rate-card h3 {
+  font-weight: 300;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
 }

@@ -1,1 +1,12 @@
-<p>rates works!</p>
+<div class="container-fluid gx-0 position-relative bg-image" style="background-image: url('/assets/rates-bg.jpg')">
+  <div class="row mb-5">
+    <h1 class="my-5 py-5 bg-dark-alpha-50 text-center text-light fw-light ff-barlow fs-1 fst-italic">Self-Pay Rates</h1>
+  </div>
+  <div class="row justify-content-evenly text-center text-light my-5 p-5">
+    <div *ngFor="let rate of rates" class="rate-card rounded-4 mb-5 d-flex flex-column justify-content-evenly">
+      <h2>{{rate.name}}</h2>
+      <h3>{{rate.price}}</h3>
+      <a class="btn btn-lg btn-logo-color-light px-3 mx-auto text-dark" [href]="eLinks.getBooking()">Book Now</a>
+    </div>
+  </div>
+</div>

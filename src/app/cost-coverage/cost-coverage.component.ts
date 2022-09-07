@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-cost-coverage',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CostCoverageComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private activatedRote: ActivatedRoute) { }
   ngOnInit(): void {
+    setTimeout( () => {
+      if (this.activatedRote.snapshot.url[0].path == "rates") {
+        const el = document.getElementById("rates");
+        if( el != null) {
+          el.scrollIntoView({behavior: "smooth"});
+        }
+      }
+    }, 500);
   }
-
 }
