@@ -5,7 +5,6 @@ import {HomeComponent} from "./home/home.component";
 import {SpecialtyComponent} from "./specialty/specialty.component";
 import {CostCoverageComponent} from "./cost-coverage/cost-coverage.component";
 import {BookingComponent} from "./booking/booking.component";
-import {ExternalLinkService} from "./external-link.service";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -17,8 +16,10 @@ const routes: Routes = [
   {path: 'booking', component: BookingComponent}
 ];
 
+// RouterModule.forRoot(routes)  <--- add to imports
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
