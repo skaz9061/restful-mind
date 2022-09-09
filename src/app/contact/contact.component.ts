@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {InfoService} from "../info.service";
+import {ExternalLinkService} from "../external-link.service";
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public info: InfoService,
+    public eLinks: ExternalLinkService
+  ) { }
 
   ngOnInit(): void {
   }

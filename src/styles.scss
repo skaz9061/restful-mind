@@ -11,8 +11,9 @@ $dark_alpha_25: rgba(0, 9, 44, 0.25);
 $dark_alpha_50: rgba(0, 9, 44, 0.5);
 $dark_alpha_75: rgba(0, 9, 44, 0.75);
 $light: rgba(243, 243, 248);
-$light: rgba(243, 243, 248);
-$light: rgba(243, 243, 248);
+$light_alpha_25: rgba(243, 243, 248, 0.25);
+$light_alpha_50: rgba(243, 243, 248, 0.50);
+$light_alpha_75: rgba(243, 243, 248, 0.75);
 $logo_color_light: rgb(188, 229, 73);
 $logo_color_dark: rgb(171, 206, 69);
 $logo_color_dark_alpha_50: rgb(29, 179, 66, 0.5);
@@ -107,6 +108,18 @@ $font-sizes: (
   background-color: $dark_alpha_50;
 }
 
+.bg-light-alpha-25{
+  background-color: $light_alpha_25;
+}
+
+.bg-light-alpha-50{
+  background-color: $light_alpha_50;
+}
+
+.bg-light-alpha-75{
+  background-color: $light_alpha_75;
+}
+
 .bg-logo-color-alpha-50{
   background-color: $logo_color_alpha_50;
 }
@@ -155,6 +168,12 @@ $font-sizes: (
   }
 }
 
+.btn-hover-bg-light {
+  &:hover{
+    background-color: $light;
+  }
+}
+
 .border-dark-alpha-75 {
   --bs-border-color: rgba(0, 9, 44, 0.75) !important;
 }
@@ -177,6 +196,10 @@ $font-sizes: (
 
 .shadow-color-dark {
   box-shadow: 15px 15px $light;
+}
+
+.shadow-inset {
+  box-shadow: $box-shadow-inset;
 }
 
 .background-video {

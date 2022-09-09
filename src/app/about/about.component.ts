@@ -24,6 +24,13 @@ export class AboutComponent implements OnInit {
   providerDesc = this.info.getProviderDesc();
   providerImage = this.info.getProviderImageLoc();
 
+  schoolImages: string[] = [
+    "assets/school-logos/jfk-muhlenburg.jpg",
+    "assets/school-logos/University_of_Texas_at_Arlington_seal.png",
+    "assets/school-logos/usu_seal.jpg",
+    "assets/school-logos/aanp-stamp.png"
+  ];
+
   officeHours: {[key: string]: string} = this.info.getHours();
   locations: Location[] = this.info.getLocations();
   hoursSort: (a: KeyValue<string, string>, b: KeyValue<string, string>) => number = Utils.getOriginalOrderSortFunction();

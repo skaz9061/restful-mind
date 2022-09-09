@@ -16,6 +16,8 @@ export class CostCoverageComponent implements OnInit {
         if( el != null) {
           el.scrollIntoView({behavior: "smooth"});
         }
+      } else {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
     }, 500);
   }

@@ -1,1 +1,47 @@
-<p>contact works!</p>
+<div class="container-fluid shadow-inset bg-image" style="background-image: url('assets/contact.jpg');">
+  <div class="row justify-content-center align-items-stretch py-5">
+    <div class="col-3 bg-dark-alpha-50 text-light border border-dark border-2">
+      <h2 class="ff-barlow fw-light fs-2 ">Contact Us</h2>
+      <div class="ps-4">
+        <a class="d-block text-decoration-none text-light mb-2" href="tel:{{info.getPhoneNumber()}}"><i class="bi bi-phone-fill me-2"></i>{{info.getPhoneNumber()}}</a>
+        <a class="d-block text-decoration-none text-light mb-2" href="mailTo:{{info.getContactEmail()}}"><i class="bi bi-envelope me-2"></i>{{info.getContactEmail()}}</a>
+        <a class="d-block text-decoration-none text-light mb-2" [href]="eLinks.getBooking()"><i class="bi bi-calendar me-2"></i>Book Appointment</a>
+      </div>
+    </div>
+    <div class="col-6 border border-dark border-2 py-5 bg-light-alpha-50">
+      <form>
+        <div class="row">
+          <div class="col-12 form-group mb-2 mx-auto">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 form-group mb-3 mx-auto">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Address">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-12 col-md-6 mb-3">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group col-12 col-md-6 mb-3">
+            <label for="phoneNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="form-group col-12">
+            <label for="message">Message</label>
+            <textarea class="form-control mb-3" id="message" placeholder="Enter Message" rows="4" style="resize: none"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark text-light mx-2">Submit</button>
+        <button type="reset" class="btn btn-dark text-light mx-2">Clear</button>
+      </form>
+    </div>
+  </div>
+</div>
+

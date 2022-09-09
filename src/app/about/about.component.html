@@ -1,7 +1,7 @@
 <div class="container-fluid mb-5">
   <div class="row justify-content-center mt-5 py-5">
     <div class="col-5">
-      <h1 class="text-center text-dark mb-5 fst-italic ff-barlow fs-2">About Us</h1>
+      <h1 class="text-center text-dark mb-4 pb-4 fst-italic ff-barlow fs-2 border-bottom border-logo-color-light border-2">About Us</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget nunc lobortis mattis aliquam faucibus purus in massa tempor. Pharetra et ultrices neque ornare aenean euismod elementum.
       </p>
@@ -29,6 +29,11 @@
     </div>
     <div class="col-md-4 mb-5">
       <img src="{{providerImage}}" class="shadow-color-dark" width="85%" alt="Headshot of provider {{providerName}}"/>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div *ngFor="let schoolImage of schoolImages" class="m-4" style="width: 250px">
+      <img src="{{schoolImage}}" width="100%"/>
     </div>
   </div>
   <div class="row justify-content-around bg-dark shadow-lg mb-5 bg-gradient">
