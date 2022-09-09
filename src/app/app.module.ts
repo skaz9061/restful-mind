@@ -17,6 +17,7 @@ import { CostCoverageComponent } from './cost-coverage/cost-coverage.component';
 import { ContactComponent } from './contact/contact.component';
 import {HoursTransformPipe} from "./hours-transform.pipe";
 import { ConditionCardComponent } from './condition-card/condition-card.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ConditionCardComponent } from './condition-card/condition-card.componen
     CostCoverageComponent,
     ContactComponent,
     HoursTransformPipe,
-    ConditionCardComponent
+    ConditionCardComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
