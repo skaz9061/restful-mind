@@ -19,7 +19,7 @@ const routes: Routes = [
 // RouterModule.forRoot(routes)  <--- add to imports
 
 @NgModule({
-  imports: [],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

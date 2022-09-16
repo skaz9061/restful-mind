@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Restful Mind Mental Health';
-  comingSoon = true;
+  comingSoon = false;
 }
