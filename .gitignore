@@ -42,4 +42,4 @@ testem.log
 Thumbs.db
 
 # Private Data
-/src/environments/*
+/src/environments
