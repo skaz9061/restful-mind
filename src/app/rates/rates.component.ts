@@ -15,7 +15,7 @@ export class RatesComponent implements OnInit {
   rates: Rate[] = [
     {
       name: "Initial Visit",
-      price: "$199"
+      price: "$149"
     },
     {
       name: "Follow-Up",

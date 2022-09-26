@@ -23,6 +23,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import {environment} from "../environments/environment";
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     RecaptchaFormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [
     {

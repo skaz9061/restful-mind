@@ -15,7 +15,7 @@ interface IConditions {
 export class ExternalLinkService {
   constructor() { }
 
-  private booking: string = "https://www.google.com";
+  private booking: string = "https://DmitryTverskoy.intakeq.com/booking";
   private conditions: IConditions = {
     anxiety: "https://psychiatry.org/patients-families/anxiety-disorders/what-are-anxiety-disorders",
     adhd: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd",
