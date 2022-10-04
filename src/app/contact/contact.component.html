@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <div class="row justify-content-center align-items-stretch py-sm-5 bg-image" style="background-image: url('assets/contact.jpg');">
-    <div class="col-12 col-sm-3 bg-dark-alpha-50 text-light border border-dark border-2">
+  <div class="row justify-content-center align-items-stretch py-md-5 bg-image" style="background-image: url('assets/contact.jpg');">
+    <div class="col-12 col-md-5 col-lg-4 col-xl-3 bg-dark-alpha-50 text-light border-md border-dark border-2">
       <h2 class="ff-barlow fw-light fs-2 ">Contact Us</h2>
       <div class="ps-4">
         <a class="d-block text-decoration-none text-light mb-2" href="tel:{{info.getPhoneNumber()}}"><i class="bi bi-phone-fill me-2"></i>{{info.getPhoneNumber()}}</a>
@@ -8,7 +8,7 @@
         <a class="d-block text-decoration-none text-light mb-2" [href]="eLinks.getBooking()"><i class="bi bi-calendar me-2"></i>Book Appointment</a>
       </div>
     </div>
-    <div class="col-12 col-sm-6 border border-dark border-2 py-5 bg-light-alpha-50">
+    <div class="col-12 col-md-6 border-md border-dark border-2 py-5 bg-light-alpha-50">
       <form #form="ngForm" [formGroup]="contactForm">
         <div class="row">
           <div class="col-12 form-group mb-2 mx-auto">

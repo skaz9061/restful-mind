@@ -1,12 +1,22 @@
 <div class="container-fluid mb-5">
-    <div class="row justify-content-center py-5 bg-image" style="background-image: url('assets/sunflowers.jpg');">
+  <!-- With image -->
+  <div class="d-none d-md-flex row justify-content-center py-5 bg-image" style="background-image: url('assets/sunflowers.jpg');">
     <div class="col-8 bg-dark-alpha-75 my-5 p-5">
-      <h1 class="text-center text-light mb-4 pb-4  ff-cormorant fs-1 border-bottom border-logo-color-light border-2">Our Mission:</h1>
-      <p class="fs-2-5 ff-cormorant fw-light text-light lh-lg">
+      <h1 class="text-center text-light mb-4 pb-4  ff-cormorant fs-2 border-bottom border-logo-color-light border-2">Our Mission:</h1>
+      <p class="fs-3 ff-cormorant fw-light text-light lh-lg">
         &emsp;We are committed to supporting you during the most challenging times. We aim to help people live more fulfilling, happy lives by providing expert, personalized psychiatric care.
       </p>
     </div>
   </div>
+  <!-- Without image -->
+    <div class="d-flex d-md-none row justify-content-center">
+      <div class="col-12 bg-dark-alpha-75 p-5">
+        <h1 class="text-center text-light mb-4 pb-4  ff-cormorant fs-2 border-bottom border-logo-color-light border-2">Our Mission:</h1>
+        <p class="fs-3 ff-cormorant fw-light text-light">
+          &emsp;We are committed to supporting you during the most challenging times. We aim to help people live more fulfilling, happy lives by providing expert, personalized psychiatric care.
+        </p>
+      </div>
+    </div>
   <div class="row bg-dark text-center shadow py-5">
     <span class="ff-barlow fs-1 fst-italic text-white">Meet Our Provider</span>
   </div>
@@ -30,7 +40,7 @@
       <img src="{{schoolImage}}" width="100%"/>
     </div>
   </div>
-  <div class="row justify-content-around bg-dark shadow-lg mb-5 bg-gradient">
+  <div class="row justify-content-around bg-dark shadow-lg mb-5 bg-gradient py-5">
     <div class="col-md-8 col-lg-6 text-center">
       <h3 class="text-logo-color-light ff-barlow fs-2 fw-light">Office Hours</h3>
       <div class="d-flex flex-row flex-wrap justify-content-evenly text-white">
@@ -39,8 +49,8 @@
         </span>
       </div>
     </div>
-    <div class="col-2 my-auto">
-      <a class="btn btn-lg btn-light text-dark" [href]="this.eLinks.getBooking()">Book Appointment</a>
+    <div class="col-12 col-md-2 my-auto text-center">
+      <a class="btn btn-lg btn-light text-dark" [href]="this.eLinks.getBooking()" target="_blank">Book Appointment</a>
     </div>
   </div>
   <div class="row justify-content-around">

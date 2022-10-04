@@ -1,7 +1,7 @@
 <div class="container-fluid gx-0 mb-5">
   <div class="row gx-0">
     <div class="col-sm-12 position-relative shadow-lg">
-      <div class="d-flex col-12 position-absolute flex-column-reverse justify-content-center bottom-0">
+      <div class="d-md-flex d-none col-12 position-absolute flex-column-reverse justify-content-center bottom-0">
         <div class="d-block bg-dark-alpha-50 text-light p-3 text-center bottom-0 mx-auto" style="width: 50%; max-width: 600px;">
           <h1 class="ff-barlow">Welcome</h1>
           <p>
@@ -11,7 +11,15 @@
           </button>
         </div>
       </div>
-      <img width=100% src="assets/home_img.jpg" alt="Woman sitting at dock, looking across lake at mountains."/>
+      <img class="d-none d-md-block" width=100% src="assets/home_img.jpg" alt="Woman sitting at dock, looking across lake at mountains."/>
+      <div class="d-block d-md-none bg-dark-alpha-50 text-light p-3 text-center bottom-0 mx-auto">
+        <h1 class="ff-barlow">Welcome</h1>
+        <p>
+          Thank you for choosing Restful Mind for your mental health needs! Most importantly, congratulations on choosing to work on your mental health for a more satisfying, happier life.           </p>
+        <button class="btn btn-dark text-light fst-italic fw-500" routerLink="/about">
+          Learn more
+        </button>
+      </div>
     </div>
   </div>
   <div class="row gx-5 align-items-center justify-content-around mt-5 mx-auto">

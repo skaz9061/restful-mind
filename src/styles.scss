@@ -173,7 +173,17 @@ $font-sizes: (
   color: $dark;
   background-color: $logo_color_light;
 
+  &:link{
+    color: $dark;
+    background-color: $logo_color_light;
+  }
+
   &:hover{
+    color: $dark;
+    background-color: $logo_color_dark;
+  }
+
+  &:active{
     color: $dark;
     background-color: $logo_color_dark;
   }

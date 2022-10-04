@@ -1,28 +1,29 @@
 <div class="container-fluid gx-0">
   <div class="row gx-0">
-    <div class="col-4 col-xl-3 me-auto">
+    <div class="d-none d-lg-inline-block col-lg-4 col-xl-3 me-auto">
       <img src="assets/teledoc.jpg" alt="Female doctor sitting at computer" width="100%"/>
     </div>
-    <div class="col-8 d-flex flex-column align-items-center justify-content-center p-5 text-dark">
+    <div class="col-12 col-lg-8 d-flex flex-column align-items-center justify-content-center p-5 text-dark">
       <h1 class="text-center ff-barlow fw-light fs-2">Restful Mind Mental Health</h1>
       <h2 class="text-center fw-light fst-italic pb-4 mb-3 border-bottom border-1 border-logo-color-light">Telehealth in Psychiatry</h2>
       <p class="col-10">Telehealth has proven to be an important way for patients to access medical services that may be otherwise out of reach for millions of people. We live busy lives and it is often difficult to make time for self-care. Additionally, the fact is that there is unfortunately a stigma that many of us face when dealing with our mental health. For these reasons, up to 60% of patients who access psychiatric/psychological treatment are accessing this type of care for the first time ever. We offer a private, secure way to access care without having to take hours out of your busy schedule. </p>
     </div>
   </div>
 </div>
-<app-insurance></app-insurance>
+<!--<app-insurance></app-insurance>-->
 <div class="container-fluid">
-  <div class="row justify-content-around py-5 bg-dark bg-gradient align-items-center">
-    <div class="col-3 flex-shrink">
-      <h2 class="fs-1 fw-light text-light ff-barlow text-center fst-italic">Important!</h2>
+  <div class="row justify-content-center py-5 bg-dark bg-gradient align-items-start">
+    <div class="col-12 col-md-3 flex-shrink">
+      <!--<h1 class="text-logo-color-light fw-bold text-center ff-barlow fst-italic" style="font-size: 56pt">!</h1>-->
+      <h2 class="fs-2 fw-light text-light ff-barlow text-center fst-italic py-5">Please Read:</h2>
     </div>
-    <div class="col-6">
-      <h3 class="fs-3 fw-light text-light">
+    <div class="col-9">
+      <h3 class="fs-3-5 fw-light text-light">
         I want to spend our time together finding out about your unique and fascinating life to get to know you as an individual. In this pursuit, I don’t want to spend too much time reviewing standard medical/psychiatric questionnaires with you. Please take the time to fill out the health history to the best of your ability as you would at any doctor’s office. This will allow us to have a more fruitful and less rushed interaction so that I can provide you with the very best care.
       </h3>
     </div>
     <div class="col-12 text-center mt-5">
-      <a class="btn btn-lg btn-logo-color-light fw-500 border-dark text-dark mx-auto px-5" routerLink="/insurance">Book Appointment</a>
+      <a class="btn btn-lg btn-logo-color-light fw-500 border-dark text-dark mx-auto px-5" [href]="eLinks.getBooking()" target="_blank">Book Appointment</a>
     </div>
   </div>
 </div>

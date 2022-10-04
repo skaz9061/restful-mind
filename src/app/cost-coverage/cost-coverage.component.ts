@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {ExternalLinkService} from "../external-link.service";
 
 @Component({
   selector: 'app-cost-coverage',
@@ -8,7 +9,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class CostCoverageComponent implements OnInit {
 
-  constructor(private activatedRote: ActivatedRoute) { }
+  constructor(private activatedRote: ActivatedRoute, public eLinks: ExternalLinkService) { }
   ngOnInit(): void {
     setTimeout( () => {
       if (this.activatedRote.snapshot.url[0].path == "rates") {
