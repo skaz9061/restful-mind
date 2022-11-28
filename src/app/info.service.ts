@@ -19,7 +19,7 @@ export class InfoService {
 
   private provider = {
     name: "Dmitry Tverskoy MSN, FNP-C",
-    photo: "/assets/dmitry-headshot.jpg",
+    photo: "/assets/dmitry-headshot2.jpg",
     desc: [
       "My name is Dmitry, and I am passionate about helping you achieve a happier, more joyful life with a compassionate, client-focused approach. I have been practicing medicine for 10 years, treating thousands of patients specializing in emergency medicine, substance abuse treatment, and of course mental health. ",
       "Whether this is your first journey into mental health or if you have worked with a psychiatric care provider before, I look forward to helping you pursue a more enriching and fulfilling life."
